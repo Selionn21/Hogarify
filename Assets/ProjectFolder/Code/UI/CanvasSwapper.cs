@@ -7,6 +7,7 @@ public class CanvasSwapper : MonoBehaviour
     {
         if (reference == currentCanva) return;
 
+        if(currentCanva != null)
         currentCanva.SetActive(false);
         currentCanva = reference;
         currentCanva.SetActive(true);
